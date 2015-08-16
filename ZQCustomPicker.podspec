@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.name             = "ZQCustomPicker"
   s.version          = "0.1.0"
   s.summary          = "A pop-up picker from the bottom of screen."
-  s.homepage         = "https://github.com/AngleZhou/ZQCustomPicker"
+  s.homepage         = "https://github.com/AngleZhou"
   s.license          = 'MIT'
   s.author           = { "AngleZhou" => "zhouq87724@163.com" }
   s.source           = { :git => "https://github.com/AngleZhou/ZQCustomPicker.git", :tag => s.version.to_s }
