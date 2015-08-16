@@ -1,5 +1,5 @@
 #
-<<<<<<< HEAD
+
 # Be sure to run `pod lib lint ZQCustomPicker.podspec' to ensure this is a
 # valid spec before submitting.
 #
@@ -22,9 +22,8 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'ZQCustomPicker' => ['Pod/Assets/*.png']
   }
-  s.preserve_paths = 'ZQCustomPickerDemo'
   # s.public_header_files = 'Pod/Classes/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
->>>>>>> 8ebaf5fa4d19b10857d62c54adb0b8cefa107bb1
+
 end
