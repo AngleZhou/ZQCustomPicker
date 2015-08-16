@@ -6,17 +6,17 @@
 //  Copyright (c) 2015年 Qian Zhou. All rights reserved.
 //
 
-#import "CustomDataPicker.h"
-#import "NullableDatePicker.h"
+#import "ZQCustomDataPicker.h"
+#import "ZQNullableDatePicker.h"
 
-@interface CustomDataPicker () <CustomDataPickerDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
+@interface ZQCustomDataPicker () <ZQCustomDataPickerDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 
 
 //subViews
 @property (nonatomic, strong) UIToolbar *toolBar;
 @property (nonatomic, strong) UIDatePicker *datePicker;
 @property (nonatomic, strong) UIPickerView *pickerView;
-@property (nonatomic, strong) NullableDatePicker *nullablePicker;
+@property (nonatomic, strong) ZQNullableDatePicker *nullablePicker;
 @property (nonatomic, strong) UIView *backgroundView;
 
 
@@ -31,7 +31,7 @@
 
 @end
 
-@implementation CustomDataPicker
+@implementation ZQCustomDataPicker
 
 
 //static int height = 162;
@@ -63,7 +63,7 @@ static float toolbarHeight = 40;
     
     self=[super init];
     if (self) {
-        self.type = CustomDataPickerTypeDate;
+        self.type = ZQCustomDataPickerTypeDate;
         _hasToolBar = hasToolbar;
         [self setMainView:isDecorationView hasToolbar:hasToolbar];
         
@@ -113,7 +113,7 @@ static float toolbarHeight = 40;
 - (instancetype)initNullableDatePickerWithYear:(NSInteger)year Month:(NSInteger)month Day:(NSInteger)day isDecorationView:(BOOL)isDecorationView hasToolbar:(BOOL)hasToolbar {
     self = [super init];
     if (self) {
-        self.type = CustomDataPickerTypeNullable;
+        self.type = ZQCustomDataPickerTypeNullable;
         _hasToolBar = hasToolbar;
         [self setMainView:isDecorationView hasToolbar:hasToolbar];
         
@@ -162,7 +162,7 @@ static float toolbarHeight = 40;
 - (instancetype)initPickerViewWithArray:(NSArray *)array andInitSelection:(NSArray *)initArray isDecorationView:(BOOL)isDecorationView hasToolbar:(BOOL)hasToolbar {
     self=[super init];
     if (self) {
-        self.type = CustomDataPickerTypeNormal;
+        self.type = ZQCustomDataPickerTypeNormal;
         _hasToolBar = hasToolbar;
         _dataArray = array;
         
@@ -511,7 +511,7 @@ static float toolbarHeight = 40;
     if (hasToolbar) {
         y = toolbarHeight;
     }
-    _nullablePicker = [[NullableDatePicker alloc] initWithYear:year month:month day:day yPosition:y];
+    _nullablePicker = [[ZQNullableDatePicker alloc] initWithYear:year month:month day:day yPosition:y];
     _pickerViewHeight = _nullablePicker.frame.size.height;
 }
 

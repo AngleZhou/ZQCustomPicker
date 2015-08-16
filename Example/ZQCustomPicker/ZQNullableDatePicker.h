@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-@class NullableDatePicker;
+@class ZQNullableDatePicker;
 
 @protocol nullableDatePickerDelegate <NSObject>
 @end
 
-@interface NullableDatePicker : UIView
+@interface ZQNullableDatePicker : UIView
 
 @property(nonatomic,weak) id<nullableDatePickerDelegate> delegate;
 

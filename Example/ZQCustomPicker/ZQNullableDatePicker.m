@@ -6,11 +6,11 @@
 //  Copyright (c) 2015年 He Zhongjie. All rights reserved.
 //
 
-#import "NullableDatePicker.h"
+#import "ZQNullableDatePicker.h"
 
 #define MAXROW 8192
 
-@interface NullableDatePicker ()<UIPickerViewDataSource, UIPickerViewDelegate>
+@interface ZQNullableDatePicker ()<UIPickerViewDataSource, UIPickerViewDelegate>
 @property(nonatomic, strong)UIPickerView *pickerView;
 @property(nonatomic, strong)NSMutableArray *yearPickerData;
 @property(nonatomic, strong)NSMutableArray *monthPickerData;
@@ -18,7 +18,7 @@
 @property(nonatomic, strong)NSDateComponents *todayComponents;
 @end
 
-@implementation NullableDatePicker
+@implementation ZQNullableDatePicker
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     return 3;

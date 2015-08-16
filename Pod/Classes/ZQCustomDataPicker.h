@@ -10,26 +10,26 @@
 
 
 typedef NS_ENUM(NSInteger, CustomPickerType) {
-    CustomDataPickerTypeNormal = 0,
-    CustomDataPickerTypeNullable,
-    CustomDataPickerTypeDate
+    ZQCustomDataPickerTypeNormal = 0,
+    ZQCustomDataPickerTypeNullable,
+    ZQCustomDataPickerTypeDate
 };
 
-@class CustomDataPicker;
+@class ZQCustomDataPicker;
 
 
-@protocol CustomDataPickerDelegate <NSObject>
+@protocol ZQCustomDataPickerDelegate <NSObject>
 
 @optional
 //implement it to get result when there's toolbar
-- (void)customPickerViewDoneBtnClicked:(CustomDataPicker *)pickerView resultString:(NSString *)resultString;
+- (void)customPickerViewDoneBtnClicked:(ZQCustomDataPicker *)pickerView resultString:(NSString *)resultString;
 //implement it to get result when there's NO toolbar
 - (void)customPickerView:(UIPickerView *)pickerView didSelectWithResultArray:(NSArray *)resultArray ResultString:(NSString *)resultString;
 //implement it to hide the picker when used as text field or text view's input view
 - (void)customPicerShouldDisappear;
 @end
 
-@interface CustomDataPicker : UIView 
+@interface ZQCustomDataPicker : UIView 
 
 //result
 @property (nonatomic, strong) NSString *resultString;
@@ -40,7 +40,7 @@ typedef NS_ENUM(NSInteger, CustomPickerType) {
 
 @property (nonatomic) CustomPickerType type;
 
-@property (nonatomic, weak) id<CustomDataPickerDelegate> delegate;
+@property (nonatomic, weak) id<ZQCustomDataPickerDelegate> delegate;
 
 
 
