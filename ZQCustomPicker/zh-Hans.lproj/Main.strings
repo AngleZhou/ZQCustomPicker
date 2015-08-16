@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "normal picker has no toolbar"; ObjectID = "Hol-k6-Xxb"; */
+"Hol-k6-Xxb.text" = "normal picker has no toolbar";
+
+/* Class = "UILabel"; text = "normal picker"; ObjectID = "Qvj-3l-UQx"; */
+"Qvj-3l-UQx.text" = "normal picker";
+
+/* Class = "UITextField"; placeholder = "normal picker as decoration view"; ObjectID = "TTM-IC-sMU"; */
+"TTM-IC-sMU.placeholder" = "normal picker as decoration view";
+
+/* Class = "UILabel"; text = "nullable date picker"; ObjectID = "uIF-ty-mXQ"; */
+"uIF-ty-mXQ.text" = "nullable date picker";
+
+/* Class = "UILabel"; text = "normal date picker"; ObjectID = "yh5-Zw-yuP"; */
+"yh5-Zw-yuP.text" = "normal date picker";
