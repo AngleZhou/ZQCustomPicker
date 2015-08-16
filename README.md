@@ -7,6 +7,12 @@ A pop-up picker from the bottom of screen, supporting five types
 [![License](https://img.shields.io/cocoapods/l/ZQCustomPicker.svg?style=flat)](http://cocoapods.org/pods/ZQCustomPicker)
 [![Platform](https://img.shields.io/cocoapods/p/ZQCustomPicker.svg?style=flat)](http://cocoapods.org/pods/ZQCustomPicker)
 
+![https://github.com/AngleZhou/ZQCustomPicker/blob/master/Example/screenshot1.png?raw=true](https://github.com/AngleZhou/ZQCustomPicker/blob/master/Example/screenshot1.png?raw=true)
+![https://github.com/AngleZhou/ZQCustomPicker/blob/master/Example/screenshot2.png?raw=true](https://github.com/AngleZhou/ZQCustomPicker/blob/master/Example/screenshot2.png?raw=true)
+![https://github.com/AngleZhou/ZQCustomPicker/blob/master/Example/screenshot3.png?raw=true](https://github.com/AngleZhou/ZQCustomPicker/blob/master/Example/screenshot3.png?raw=true)
+![https://github.com/AngleZhou/ZQCustomPicker/blob/master/Example/screenshot4.png?raw=true](https://github.com/AngleZhou/ZQCustomPicker/blob/master/Example/screenshot4.png?raw=true)
+![https://github.com/AngleZhou/ZQCustomPicker/blob/master/Example/screenshot5.png?raw=true](https://github.com/AngleZhou/ZQCustomPicker/blob/master/Example/screenshot5.png?raw=true)
+
 ## Features
 
 - Normal picker
