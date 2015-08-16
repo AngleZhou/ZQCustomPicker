@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D298E362CF6E44A4C79515FC3CC7C01 /* Pods-ZQCustomPicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6269B84FD6675A3E7A3B1B81978AB0B /* Pods-ZQCustomPicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B8BE460FDE68C7C69EF455213C9CA68 /* ZQCustomPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BAD03B6F578CDAB11A22ADDAF4EA6C3 /* ZQCustomPicker.bundle */; };
+		33A39B0D8B6D26A119DEE2A6A5EE1B98 /* Pods-ZQCustomPicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6AD54FD8899A9E20F0CF0600CD3744 /* Pods-ZQCustomPicker_Tests-dummy.m */; };
+		3F7F8F9004FAF81F37C38FD57CF4D694 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E998D22615C353374AAF315FF79BC6 /* Foundation.framework */; };
+		6C5EE814D208A16AD12E96A5B9556DF4 /* Pods-ZQCustomPicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAB9DDDD2F4600CBF98DD3E31C70D6B /* Pods-ZQCustomPicker_Example-dummy.m */; };
+		6E48DA8982C6B1F780193596607EA530 /* Pods-ZQCustomPicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29118510C3175378301E039A0304736B /* Pods-ZQCustomPicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CAB0CDD1B8037C1000CA504 /* CustomDataPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CAB0CD91B8037C1000CA504 /* CustomDataPicker.h */; };
+		7CAB0CDE1B8037C1000CA504 /* CustomDataPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB0CDA1B8037C1000CA504 /* CustomDataPicker.m */; };
+		7CAB0CDF1B8037C1000CA504 /* NullableDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CAB0CDB1B8037C1000CA504 /* NullableDatePicker.h */; };
+		7CAB0CE01B8037C1000CA504 /* NullableDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB0CDC1B8037C1000CA504 /* NullableDatePicker.m */; };
+		8A14DECC5E92489038B157933FA82A51 /* ZQCustomPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B6DB25123B0BDD5EB8ED50992EFEF7 /* ZQCustomPicker-dummy.m */; };
+		94EAB61963FFEF85A1F1D26DE2D47A91 /* ZQCustomPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA0BAD059073771D2399A6234CE8028C /* ZQCustomPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A17BC5D5DED12AAAE5D5423F540EA20D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E998D22615C353374AAF315FF79BC6 /* Foundation.framework */; };
+		CA797D9F1661489C773AD0C14DDF7B7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E998D22615C353374AAF315FF79BC6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		118D31CD17F20FDA3068510A84F2CF06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F5644A1C95B7505FC7F525C1486A8A6;
+			remoteInfo = ZQCustomPicker;
+		};
+		15D6B0315CE2AD2ACCD3EC85B7BF821E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15DB5F340CC26E2B81C4DD388ADD8CC1;
+			remoteInfo = "ZQCustomPicker-ZQCustomPicker";
+		};
+		E5B845A36CEB50A415EC6BE6E5269AF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F5644A1C95B7505FC7F525C1486A8A6;
+			remoteInfo = ZQCustomPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A87F3CDFEF292431C863436387AD676 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B67FB1BF4A168DB3E992301C2006A2C /* Pods-ZQCustomPicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZQCustomPicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0B6AD54FD8899A9E20F0CF0600CD3744 /* Pods-ZQCustomPicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZQCustomPicker_Tests-dummy.m"; sourceTree = "<group>"; };
+		19C12AFAD3DA10C40CDFCBC416435B11 /* Pods-ZQCustomPicker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZQCustomPicker_Tests-resources.sh"; sourceTree = "<group>"; };
+		20F138CBBE1A07A8E185B0C18ECBB5E8 /* ZQCustomPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZQCustomPicker-prefix.pch"; sourceTree = "<group>"; };
+		27CD120124FB9C9FBE9F963C506C1BEA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29118510C3175378301E039A0304736B /* Pods-ZQCustomPicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZQCustomPicker_Tests-umbrella.h"; sourceTree = "<group>"; };
+		2AADA2F4B3DC260550532653E9E63BFB /* Pods-ZQCustomPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZQCustomPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2BAD03B6F578CDAB11A22ADDAF4EA6C3 /* ZQCustomPicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZQCustomPicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		31454BC8E8B6429D2343F371F76922FD /* Pods-ZQCustomPicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZQCustomPicker_Example-frameworks.sh"; sourceTree = "<group>"; };
+		43C7CD06A37519BCB3CC0385D37CA104 /* Pods_ZQCustomPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQCustomPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E998D22615C353374AAF315FF79BC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		465D899EE76EC974112307690D8CDEA5 /* Pods-ZQCustomPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZQCustomPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5C2D8E3444109C5583A97E4C552E871F /* ZQCustomPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZQCustomPicker.xcconfig; sourceTree = "<group>"; };
+		5DAB9DDDD2F4600CBF98DD3E31C70D6B /* Pods-ZQCustomPicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZQCustomPicker_Example-dummy.m"; sourceTree = "<group>"; };
+		6B8C69E6752A742D510AD4D255640CE6 /* ZQCustomPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ZQCustomPicker.modulemap; sourceTree = "<group>"; };
+		7930EFECC4C6D3BB574DF8C17D91265E /* Pods-ZQCustomPicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZQCustomPicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7CAB0CD91B8037C1000CA504 /* CustomDataPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomDataPicker.h; sourceTree = "<group>"; };
+		7CAB0CDA1B8037C1000CA504 /* CustomDataPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomDataPicker.m; sourceTree = "<group>"; };
+		7CAB0CDB1B8037C1000CA504 /* NullableDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NullableDatePicker.h; sourceTree = "<group>"; };
+		7CAB0CDC1B8037C1000CA504 /* NullableDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullableDatePicker.m; sourceTree = "<group>"; };
+		8B52351F4E2E8114D2262C0C31C51416 /* Pods-ZQCustomPicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZQCustomPicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8CCAB0634B54D23524238D80BA9F1B2B /* ZQCustomPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZQCustomPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E049FAF5CF14ADF74C275C4F5C560B8 /* Pods-ZQCustomPicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ZQCustomPicker_Example.modulemap"; sourceTree = "<group>"; };
+		8ECDA8D21FC4733D761691589930F91C /* Pods-ZQCustomPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZQCustomPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9A184BA0DBF420A507800E3C25A15740 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A47D9009E16ED12AD04DF2FE8948430 /* Pods-ZQCustomPicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ZQCustomPicker_Tests.modulemap"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C4D25E582B81B461BDFDE586D3640FC1 /* Pods_ZQCustomPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQCustomPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF0EB6FFB59E6F90953BCC87ABEA5A11 /* Pods-ZQCustomPicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZQCustomPicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D1B6DB25123B0BDD5EB8ED50992EFEF7 /* ZQCustomPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZQCustomPicker-dummy.m"; sourceTree = "<group>"; };
+		E22FB918507F51E5E8A21A5029E6E3F8 /* Pods-ZQCustomPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZQCustomPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E75FB79EA33AF72375380102FDBF32EC /* Pods-ZQCustomPicker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZQCustomPicker_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		E92C057A65A341F370741D3FFAC0D1F3 /* ZQCustomPicker-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ZQCustomPicker-Private.xcconfig"; sourceTree = "<group>"; };
+		EA0BAD059073771D2399A6234CE8028C /* ZQCustomPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZQCustomPicker-umbrella.h"; sourceTree = "<group>"; };
+		F6269B84FD6675A3E7A3B1B81978AB0B /* Pods-ZQCustomPicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZQCustomPicker_Example-umbrella.h"; sourceTree = "<group>"; };
+		FEDA2EE5B49945E2895A7022B73E06D0 /* Pods-ZQCustomPicker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZQCustomPicker_Example-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4478C7B8C4B076DDE9AA94510B43B658 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7F8F9004FAF81F37C38FD57CF4D694 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		742FEC06ECFFA455C94AD609961D6147 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17BC5D5DED12AAAE5D5423F540EA20D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28F9FA2D32A865F3ED4FFDF11697703 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E070F1C45EEB733753DBAF23E225E86F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA797D9F1661489C773AD0C14DDF7B7A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B13BF42C2247CEE0933866DCC983756 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB0CD91B8037C1000CA504 /* CustomDataPicker.h */,
+				7CAB0CDA1B8037C1000CA504 /* CustomDataPicker.m */,
+				7CAB0CDB1B8037C1000CA504 /* NullableDatePicker.h */,
+				7CAB0CDC1B8037C1000CA504 /* NullableDatePicker.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3B9213B3B6420571FF96073592CE67FC /* Pods-ZQCustomPicker_Example */ = {
+			isa = PBXGroup;
+			children = (
+				27CD120124FB9C9FBE9F963C506C1BEA /* Info.plist */,
+				8E049FAF5CF14ADF74C275C4F5C560B8 /* Pods-ZQCustomPicker_Example.modulemap */,
+				7930EFECC4C6D3BB574DF8C17D91265E /* Pods-ZQCustomPicker_Example-acknowledgements.markdown */,
+				8B52351F4E2E8114D2262C0C31C51416 /* Pods-ZQCustomPicker_Example-acknowledgements.plist */,
+				5DAB9DDDD2F4600CBF98DD3E31C70D6B /* Pods-ZQCustomPicker_Example-dummy.m */,
+				31454BC8E8B6429D2343F371F76922FD /* Pods-ZQCustomPicker_Example-frameworks.sh */,
+				FEDA2EE5B49945E2895A7022B73E06D0 /* Pods-ZQCustomPicker_Example-resources.sh */,
+				F6269B84FD6675A3E7A3B1B81978AB0B /* Pods-ZQCustomPicker_Example-umbrella.h */,
+				8ECDA8D21FC4733D761691589930F91C /* Pods-ZQCustomPicker_Example.debug.xcconfig */,
+				465D899EE76EC974112307690D8CDEA5 /* Pods-ZQCustomPicker_Example.release.xcconfig */,
+			);
+			name = "Pods-ZQCustomPicker_Example";
+			path = "Target Support Files/Pods-ZQCustomPicker_Example";
+			sourceTree = "<group>";
+		};
+		3D675C429BB597F7C0874A98F88DA1E9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B9213B3B6420571FF96073592CE67FC /* Pods-ZQCustomPicker_Example */,
+				D5BF9DC74ED072AD8702345CB06D2FC5 /* Pods-ZQCustomPicker_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				43E998D22615C353374AAF315FF79BC6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				A0AF036D8BB0A8AE5930119BEA4EE065 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				3D675C429BB597F7C0874A98F88DA1E9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A0AF036D8BB0A8AE5930119BEA4EE065 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F305C268312E39ABF8FEFB1E4E9F87C5 /* ZQCustomPicker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A3C9B031F3B7A5A4EC9C1C744AEB60EA /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0B13BF42C2247CEE0933866DCC983756 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C411509FD3E113FA191258ECBA88D46B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A184BA0DBF420A507800E3C25A15740 /* Info.plist */,
+				6B8C69E6752A742D510AD4D255640CE6 /* ZQCustomPicker.modulemap */,
+				5C2D8E3444109C5583A97E4C552E871F /* ZQCustomPicker.xcconfig */,
+				E92C057A65A341F370741D3FFAC0D1F3 /* ZQCustomPicker-Private.xcconfig */,
+				D1B6DB25123B0BDD5EB8ED50992EFEF7 /* ZQCustomPicker-dummy.m */,
+				20F138CBBE1A07A8E185B0C18ECBB5E8 /* ZQCustomPicker-prefix.pch */,
+				EA0BAD059073771D2399A6234CE8028C /* ZQCustomPicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZQCustomPicker";
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43C7CD06A37519BCB3CC0385D37CA104 /* Pods_ZQCustomPicker_Example.framework */,
+				C4D25E582B81B461BDFDE586D3640FC1 /* Pods_ZQCustomPicker_Tests.framework */,
+				2BAD03B6F578CDAB11A22ADDAF4EA6C3 /* ZQCustomPicker.bundle */,
+				8CCAB0634B54D23524238D80BA9F1B2B /* ZQCustomPicker.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5BF9DC74ED072AD8702345CB06D2FC5 /* Pods-ZQCustomPicker_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0A87F3CDFEF292431C863436387AD676 /* Info.plist */,
+				9A47D9009E16ED12AD04DF2FE8948430 /* Pods-ZQCustomPicker_Tests.modulemap */,
+				CF0EB6FFB59E6F90953BCC87ABEA5A11 /* Pods-ZQCustomPicker_Tests-acknowledgements.markdown */,
+				0B67FB1BF4A168DB3E992301C2006A2C /* Pods-ZQCustomPicker_Tests-acknowledgements.plist */,
+				0B6AD54FD8899A9E20F0CF0600CD3744 /* Pods-ZQCustomPicker_Tests-dummy.m */,
+				E75FB79EA33AF72375380102FDBF32EC /* Pods-ZQCustomPicker_Tests-frameworks.sh */,
+				19C12AFAD3DA10C40CDFCBC416435B11 /* Pods-ZQCustomPicker_Tests-resources.sh */,
+				29118510C3175378301E039A0304736B /* Pods-ZQCustomPicker_Tests-umbrella.h */,
+				E22FB918507F51E5E8A21A5029E6E3F8 /* Pods-ZQCustomPicker_Tests.debug.xcconfig */,
+				2AADA2F4B3DC260550532653E9E63BFB /* Pods-ZQCustomPicker_Tests.release.xcconfig */,
+			);
+			name = "Pods-ZQCustomPicker_Tests";
+			path = "Target Support Files/Pods-ZQCustomPicker_Tests";
+			sourceTree = "<group>";
+		};
+		F305C268312E39ABF8FEFB1E4E9F87C5 /* ZQCustomPicker */ = {
+			isa = PBXGroup;
+			children = (
+				A3C9B031F3B7A5A4EC9C1C744AEB60EA /* Pod */,
+				C411509FD3E113FA191258ECBA88D46B /* Support Files */,
+			);
+			name = ZQCustomPicker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		021AC28FE1DF1950BE32E5A338E7351A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E48DA8982C6B1F780193596607EA530 /* Pods-ZQCustomPicker_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B4E4B36D2ADBE61A6C77501BAA3AB82 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CAB0CDF1B8037C1000CA504 /* NullableDatePicker.h in Headers */,
+				0D298E362CF6E44A4C79515FC3CC7C01 /* Pods-ZQCustomPicker_Example-umbrella.h in Headers */,
+				7CAB0CDD1B8037C1000CA504 /* CustomDataPicker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6EB3C64BC9D6891F5A9DE5DE54ABB24 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94EAB61963FFEF85A1F1D26DE2D47A91 /* ZQCustomPicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		15DB5F340CC26E2B81C4DD388ADD8CC1 /* ZQCustomPicker-ZQCustomPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F7D7D1143B088AED377403BC4443A85 /* Build configuration list for PBXNativeTarget "ZQCustomPicker-ZQCustomPicker" */;
+			buildPhases = (
+				6416ADA47F04E42FCB9B7054E20BFF2E /* Sources */,
+				B28F9FA2D32A865F3ED4FFDF11697703 /* Frameworks */,
+				8EA2A775A2F6468A6A75FE66018345D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZQCustomPicker-ZQCustomPicker";
+			productName = "ZQCustomPicker-ZQCustomPicker";
+			productReference = 2BAD03B6F578CDAB11A22ADDAF4EA6C3 /* ZQCustomPicker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4F5644A1C95B7505FC7F525C1486A8A6 /* ZQCustomPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A20E6EDD6F332A05E51342F6BCCE27B /* Build configuration list for PBXNativeTarget "ZQCustomPicker" */;
+			buildPhases = (
+				EED19C2D54BF0F6CBB25E615311FC965 /* Sources */,
+				742FEC06ECFFA455C94AD609961D6147 /* Frameworks */,
+				AC5C1E36FD85F3054C603601C865001F /* Resources */,
+				B6EB3C64BC9D6891F5A9DE5DE54ABB24 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				899895EFF3B8770741173A5EDFE41560 /* PBXTargetDependency */,
+			);
+			name = ZQCustomPicker;
+			productName = ZQCustomPicker;
+			productReference = 8CCAB0634B54D23524238D80BA9F1B2B /* ZQCustomPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A8A29CEE2B781F7D2EAC3973E806F7CB /* Pods-ZQCustomPicker_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ABA9C6BC933E6281F6D6C3B2D86521F /* Build configuration list for PBXNativeTarget "Pods-ZQCustomPicker_Tests" */;
+			buildPhases = (
+				42C2449D36B7CFF6C392B12A8F9CCDDE /* Sources */,
+				E070F1C45EEB733753DBAF23E225E86F /* Frameworks */,
+				021AC28FE1DF1950BE32E5A338E7351A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				261040A21624458FAB70592B409A2696 /* PBXTargetDependency */,
+			);
+			name = "Pods-ZQCustomPicker_Tests";
+			productName = "Pods-ZQCustomPicker_Tests";
+			productReference = C4D25E582B81B461BDFDE586D3640FC1 /* Pods_ZQCustomPicker_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C5C90C1BCA7A460F3D9B22D8339C08AC /* Pods-ZQCustomPicker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EA731BBCF40D5FBBC0530BF2FF687C8 /* Build configuration list for PBXNativeTarget "Pods-ZQCustomPicker_Example" */;
+			buildPhases = (
+				EF3E83560140D44B76C8CB9CDB079376 /* Sources */,
+				4478C7B8C4B076DDE9AA94510B43B658 /* Frameworks */,
+				2B4E4B36D2ADBE61A6C77501BAA3AB82 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A53F57C9BF8C912A82A3FE9C9FF8558C /* PBXTargetDependency */,
+			);
+			name = "Pods-ZQCustomPicker_Example";
+			productName = "Pods-ZQCustomPicker_Example";
+			productReference = 43C7CD06A37519BCB3CC0385D37CA104 /* Pods_ZQCustomPicker_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5C90C1BCA7A460F3D9B22D8339C08AC /* Pods-ZQCustomPicker_Example */,
+				A8A29CEE2B781F7D2EAC3973E806F7CB /* Pods-ZQCustomPicker_Tests */,
+				4F5644A1C95B7505FC7F525C1486A8A6 /* ZQCustomPicker */,
+				15DB5F340CC26E2B81C4DD388ADD8CC1 /* ZQCustomPicker-ZQCustomPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EA2A775A2F6468A6A75FE66018345D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5C1E36FD85F3054C603601C865001F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B8BE460FDE68C7C69EF455213C9CA68 /* ZQCustomPicker.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42C2449D36B7CFF6C392B12A8F9CCDDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A39B0D8B6D26A119DEE2A6A5EE1B98 /* Pods-ZQCustomPicker_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6416ADA47F04E42FCB9B7054E20BFF2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED19C2D54BF0F6CBB25E615311FC965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A14DECC5E92489038B157933FA82A51 /* ZQCustomPicker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF3E83560140D44B76C8CB9CDB079376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CAB0CDE1B8037C1000CA504 /* CustomDataPicker.m in Sources */,
+				7CAB0CE01B8037C1000CA504 /* NullableDatePicker.m in Sources */,
+				6C5EE814D208A16AD12E96A5B9556DF4 /* Pods-ZQCustomPicker_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		261040A21624458FAB70592B409A2696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZQCustomPicker;
+			target = 4F5644A1C95B7505FC7F525C1486A8A6 /* ZQCustomPicker */;
+			targetProxy = 118D31CD17F20FDA3068510A84F2CF06 /* PBXContainerItemProxy */;
+		};
+		899895EFF3B8770741173A5EDFE41560 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ZQCustomPicker-ZQCustomPicker";
+			target = 15DB5F340CC26E2B81C4DD388ADD8CC1 /* ZQCustomPicker-ZQCustomPicker */;
+			targetProxy = 15D6B0315CE2AD2ACCD3EC85B7BF821E /* PBXContainerItemProxy */;
+		};
+		A53F57C9BF8C912A82A3FE9C9FF8558C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZQCustomPicker;
+			target = 4F5644A1C95B7505FC7F525C1486A8A6 /* ZQCustomPicker */;
+			targetProxy = E5B845A36CEB50A415EC6BE6E5269AF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		40BF55392B8BAB6A9EFDDBF279628109 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E92C057A65A341F370741D3FFAC0D1F3 /* ZQCustomPicker-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ZQCustomPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		5DDEF1C8963F3B36D8DC241855009A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E92C057A65A341F370741D3FFAC0D1F3 /* ZQCustomPicker-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZQCustomPicker/ZQCustomPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZQCustomPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZQCustomPicker/ZQCustomPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ZQCustomPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7E093A3A917CD19EC73870E3BB2D3B90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E22FB918507F51E5E8A21A5029E6E3F8 /* Pods-ZQCustomPicker_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZQCustomPicker_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ZQCustomPicker_Tests/Pods-ZQCustomPicker_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ZQCustomPicker_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		86F61D7C4D4174C1987109E28E103240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ECDA8D21FC4733D761691589930F91C /* Pods-ZQCustomPicker_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZQCustomPicker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ZQCustomPicker_Example/Pods-ZQCustomPicker_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ZQCustomPicker_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		99D1E91C2FC119D7EA38BC1AFC15BC0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E92C057A65A341F370741D3FFAC0D1F3 /* ZQCustomPicker-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ZQCustomPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9D5349F9DFC6BF5831F564D66953A1EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E92C057A65A341F370741D3FFAC0D1F3 /* ZQCustomPicker-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZQCustomPicker/ZQCustomPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZQCustomPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZQCustomPicker/ZQCustomPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ZQCustomPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A31E62608874BE8F0EE79A18BD8E4BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465D899EE76EC974112307690D8CDEA5 /* Pods-ZQCustomPicker_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZQCustomPicker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ZQCustomPicker_Example/Pods-ZQCustomPicker_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ZQCustomPicker_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FC8D83318F17C32AA29FF8C6D1C7F6ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AADA2F4B3DC260550532653E9E63BFB /* Pods-ZQCustomPicker_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZQCustomPicker_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ZQCustomPicker_Tests/Pods-ZQCustomPicker_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ZQCustomPicker_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EA731BBCF40D5FBBC0530BF2FF687C8 /* Build configuration list for PBXNativeTarget "Pods-ZQCustomPicker_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86F61D7C4D4174C1987109E28E103240 /* Debug */,
+				A31E62608874BE8F0EE79A18BD8E4BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ABA9C6BC933E6281F6D6C3B2D86521F /* Build configuration list for PBXNativeTarget "Pods-ZQCustomPicker_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E093A3A917CD19EC73870E3BB2D3B90 /* Debug */,
+				FC8D83318F17C32AA29FF8C6D1C7F6ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A20E6EDD6F332A05E51342F6BCCE27B /* Build configuration list for PBXNativeTarget "ZQCustomPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D5349F9DFC6BF5831F564D66953A1EE /* Debug */,
+				5DDEF1C8963F3B36D8DC241855009A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F7D7D1143B088AED377403BC4443A85 /* Build configuration list for PBXNativeTarget "ZQCustomPicker-ZQCustomPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99D1E91C2FC119D7EA38BC1AFC15BC0B /* Debug */,
+				40BF55392B8BAB6A9EFDDBF279628109 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

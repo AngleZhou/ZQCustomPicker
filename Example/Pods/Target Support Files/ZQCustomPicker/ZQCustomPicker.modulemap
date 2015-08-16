@@ -1,0 +1,6 @@
+framework module ZQCustomPicker {
+  umbrella header "ZQCustomPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

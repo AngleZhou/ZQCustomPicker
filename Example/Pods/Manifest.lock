@@ -1,0 +1,14 @@
+PODS:
+  - ZQCustomPicker (0.1.0)
+
+DEPENDENCIES:
+  - ZQCustomPicker (from `../`)
+
+EXTERNAL SOURCES:
+  ZQCustomPicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZQCustomPicker: c05b046bc79639ba30bc93d1afa13e24fe1ac20e
+
+COCOAPODS: 0.38.2
