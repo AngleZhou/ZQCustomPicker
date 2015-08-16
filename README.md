@@ -1,6 +1,7 @@
 # ZQCustomPicker
 
-A pop-up picker from the bottom of screen, supporting five types
+A pop-up picker from the bottom of screen, supporting five types.
+感谢@eric6356贡献的nullable date picker类.
 
 [![CI Status](http://img.shields.io/travis/AngleZhou/ZQCustomPicker.svg?style=flat)](https://travis-ci.org/AngleZhou/ZQCustomPicker)
 [![Version](https://img.shields.io/cocoapods/v/ZQCustomPicker.svg?style=flat)](http://cocoapods.org/pods/ZQCustomPicker)
