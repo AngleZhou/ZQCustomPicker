@@ -8,6 +8,7 @@
 
 #import "ZQCustomDataPicker.h"
 #import "ZQNullableDatePicker.h"
+#import "ZQAddressPicker.h"
 
 @interface ZQCustomDataPicker () <ZQCustomDataPickerDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 
@@ -18,7 +19,7 @@
 @property (nonatomic, strong) UIPickerView *pickerView;
 @property (nonatomic, strong) ZQNullableDatePicker *nullablePicker;
 @property (nonatomic, strong) UIView *backgroundView;
-
+@property (nonatomic, strong) ZQAddressPicker *addressPicker;
 
 
 
@@ -113,7 +114,7 @@ static float toolbarHeight = 40;
 - (instancetype)initNullableDatePickerWithYear:(NSInteger)year Month:(NSInteger)month Day:(NSInteger)day isDecorationView:(BOOL)isDecorationView hasToolbar:(BOOL)hasToolbar {
     self = [super init];
     if (self) {
-        self.type = ZQCustomDataPickerTypeNullable;
+        self.type = ZQCustomDataPickerTypeDate;
         _hasToolBar = hasToolbar;
         [self setMainView:isDecorationView hasToolbar:hasToolbar];
         
@@ -162,7 +163,7 @@ static float toolbarHeight = 40;
 - (instancetype)initPickerViewWithArray:(NSArray *)array andInitSelection:(NSArray *)initArray isDecorationView:(BOOL)isDecorationView hasToolbar:(BOOL)hasToolbar {
     self=[super init];
     if (self) {
-        self.type = ZQCustomDataPickerTypeNormal;
+        self.type = ZQCustomDataPickerTypeDate;
         _hasToolBar = hasToolbar;
         _dataArray = array;
         
@@ -208,7 +209,49 @@ static float toolbarHeight = 40;
     return self;
 }
 
+- (instancetype)initAddressPicker {
+    return [self initAddressPickerWithInitSelection:nil isDecorationView:NO hasToolbar:YES];
+}
 
+- (instancetype)initAddressPickerWithInitSelection:(NSArray *)initArray {
+    return [self initAddressPickerWithInitSelection:initArray isDecorationView:NO hasToolbar:YES];
+}
+
+- (instancetype)initAddressPickerWithInitSelection:(NSArray *)initArray isDecorationView:(BOOL)isDecorationView hasToolbar:(BOOL)hasToolbar {
+    self = [super init];
+    if (self) {
+        _type = ZQCustomDataPickerTypeDate;
+        _hasToolBar = hasToolbar;
+        _selectionArray = initArray;
+        [self setMainView:isDecorationView hasToolbar:hasToolbar];
+        
+        if (hasToolbar) {
+            if (isDecorationView) {
+                [self addSubview:_toolBar];
+                [self setUpAddressPickerWithToolbar:hasToolbar initArray:initArray];
+                [self addSubview:_addressPicker];
+            } else {
+                [self backgroundDismiss];
+                [self.backgroundView addSubview:_toolBar];
+                [self setUpAddressPickerWithToolbar:hasToolbar initArray:initArray];
+                [self.backgroundView addSubview:_addressPicker];
+                [self addSubview:_backgroundView];
+            }
+        } else {
+            if (isDecorationView) {
+                [self setUpAddressPickerWithToolbar:hasToolbar initArray:initArray];
+                [self addSubview:_addressPicker];
+            } else {
+                [self backgroundDismiss];
+                [self setUpAddressPickerWithToolbar:hasToolbar initArray:initArray];
+                [self.backgroundView addSubview:_addressPicker];
+                [self addSubview:_backgroundView];
+            }
+        }
+        [self showAsDecorationView:isDecorationView hasToolbar:hasToolbar];
+    }
+    return self;
+}
 
 
 
@@ -352,10 +395,13 @@ static float toolbarHeight = 40;
         NSLog(@"pickerView resultstring: %@", _resultString);
     } else if (_nullablePicker) {
         _resultArray = [[_nullablePicker selectedData] copy];
+    } else if (_addressPicker) {
+        NSArray *results = @[_addressPicker.resultProvince, _addressPicker.resultCity, _addressPicker.resultRegion];
+        _resultArray = [results mutableCopy];
     }
     
-    if ([self.delegate respondsToSelector:@selector(customPickerViewDoneBtnClicked:resultString:)]) {
-        [self.delegate customPickerViewDoneBtnClicked:self resultString:_resultString];
+    if ([self.delegate respondsToSelector:@selector(customPickerViewDoneBtnClicked:resultArray:resultString:)]) {
+        [self.delegate customPickerViewDoneBtnClicked:self resultArray:_resultArray resultString:_resultString];
     }
     
 }
@@ -405,9 +451,9 @@ static float toolbarHeight = 40;
     _pickerView.delegate = self;
     _pickerView.dataSource = self;
     if (hasToolbar) {
-        _pickerView.frame = CGRectMake(0, toolbarHeight, _pickerView.frame.size.width, _pickerView.frame.size.height);
+        _pickerView.frame = CGRectMake(0, toolbarHeight, self.backgroundView.frame.size.width, _pickerView.frame.size.height);
     } else {
-        _pickerView.frame = CGRectMake(0, 0, _pickerView.frame.size.width, _pickerView.frame.size.height);
+        _pickerView.frame = CGRectMake(0, 0, self.backgroundView.frame.size.width, _pickerView.frame.size.height);
     }
     
     _pickerViewHeight = _pickerView.frame.size.height;
@@ -485,9 +531,9 @@ static float toolbarHeight = 40;
         [datePicker setDate:date];
     }
     if (hasToolbar) {
-        datePicker.frame = CGRectMake(0, toolbarHeight, datePicker.frame.size.width, datePicker.frame.size.height);
+        datePicker.frame = CGRectMake(0, toolbarHeight, self.backgroundView.frame.size.width, datePicker.frame.size.height);
     } else {
-        datePicker.frame = CGRectMake(0, 0, datePicker.frame.size.width, datePicker.frame.size.height);
+        datePicker.frame = CGRectMake(0, 0, self.backgroundView.frame.size.width, datePicker.frame.size.height);
     }
     
     
@@ -515,6 +561,15 @@ static float toolbarHeight = 40;
     _pickerViewHeight = _nullablePicker.frame.size.height;
 }
 
+
+- (void)setUpAddressPickerWithToolbar:(BOOL)hasToolbar initArray:(NSArray *)initArray {
+    CGFloat y = 0;
+    if (hasToolbar) {
+        y = toolbarHeight;
+    }
+    _addressPicker = [[ZQAddressPicker alloc] initWithYposition:y initArray:initArray];
+    _pickerViewHeight = _addressPicker.frame.size.height;
+}
 
 #pragma mark - Picker View Date Source
 

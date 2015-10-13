@@ -45,13 +45,15 @@
     if (self) {
         UIPickerView *pickerView = [[UIPickerView alloc]init];
         _pickerView = pickerView;
+        CGRect oldFrame = _pickerView.frame;
+        _pickerView.frame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y, [UIScreen mainScreen].bounds.size.width, oldFrame.size.height);
         pickerView.delegate = self;
         pickerView.dataSource = self;
         [self addSubview:pickerView];
         
         CGFloat x = 0;
-        CGFloat w = pickerView.frame.size.width;
-        CGFloat h = pickerView.frame.size.height;
+        CGFloat w = _pickerView.frame.size.width;
+        CGFloat h = _pickerView.frame.size.height;
         self.frame = CGRectMake(x, y, w, h);
         
         // 初始化pickerData

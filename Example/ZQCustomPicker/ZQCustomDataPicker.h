@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 
 
-typedef NS_ENUM(NSInteger, CustomPickerType) {
+typedef NS_ENUM(NSInteger, ZQCustomPickerType) {
     ZQCustomDataPickerTypeNormal = 0,
     ZQCustomDataPickerTypeNullable,
-    ZQCustomDataPickerTypeDate
+    ZQCustomDataPickerTypeDate,
+    ZQCustomDataPickerTypeAddress
 };
 
 @class ZQCustomDataPicker;
@@ -22,14 +23,14 @@ typedef NS_ENUM(NSInteger, CustomPickerType) {
 
 @optional
 //implement it to get result when there's toolbar
-- (void)customPickerViewDoneBtnClicked:(ZQCustomDataPicker *)pickerView resultString:(NSString *)resultString;
+- (void)customPickerViewDoneBtnClicked:(ZQCustomDataPicker *)pickerView resultArray:(NSArray *)resultArray resultString:(NSString *)resultString;
 //implement it to get result when there's NO toolbar
 - (void)customPickerView:(UIPickerView *)pickerView didSelectWithResultArray:(NSArray *)resultArray ResultString:(NSString *)resultString;
 //implement it to hide the picker when used as text field or text view's input view
 - (void)customPicerShouldDisappear;
 @end
 
-@interface ZQCustomDataPicker : UIView 
+@interface ZQCustomDataPicker : UIView
 
 //result
 @property (nonatomic, strong) NSString *resultString;
@@ -38,7 +39,7 @@ typedef NS_ENUM(NSInteger, CustomPickerType) {
 @property (nonatomic, strong) NSArray *dataArray;
 @property (nonatomic, strong) NSArray *selectionArray;
 
-@property (nonatomic) CustomPickerType type;
+@property (nonatomic) ZQCustomPickerType type;
 
 @property (nonatomic, weak) id<ZQCustomDataPickerDelegate> delegate;
 
@@ -84,7 +85,7 @@ typedef NS_ENUM(NSInteger, CustomPickerType) {
  */
 - (instancetype)initPickerViewWithArray:(NSArray *)array andInitSelection:(NSArray *)initArray isDecorationView:(BOOL)isDecorationView hasToolbar:(BOOL)hasToolbar;
 
-
+- (instancetype)initAddressPickerWithInitSelection:(NSArray *)initArray isDecorationView:(BOOL)isDecorationView hasToolbar:(BOOL)hasToolbar;
 
 
 
@@ -108,6 +109,8 @@ typedef NS_ENUM(NSInteger, CustomPickerType) {
  */
 - (instancetype)initPickerViewWithArray:(NSArray *)array andInitSelection:(NSArray *)initArray isDecorationView:(BOOL)isDecorationView;
 
+- (instancetype)initAddressPicker;
+- (instancetype)initAddressPickerWithInitSelection:(NSArray *)initArray;
 
 
 
