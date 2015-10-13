@@ -46,18 +46,19 @@
         _regions = [NSArray array];
         if (initArray.count == 0) {
             //默认第一个省的城市
-            self.selectedProvinceIndex = 0;
+            _selectedProvinceIndex = 0;
             [self citiesOfProvinceIndex:0];
             
             //默认第一个省的第一个城市的区
-            self.selectedCityIndex = 0;
+            _selectedCityIndex = 0;
+            _selectedRegionIndex = 0;
             [self regionsOfCity:0 inProvince:0];
         } else {
-            self.selectedProvinceIndex = [self indexOfSelection:initArray[0] array:_provinces];
-            [self citiesOfProvinceIndex:self.selectedProvinceIndex];
-            self.selectedCityIndex = [self indexOfSelection:initArray[1] array:_cities];
-            [self regionsOfCity:self.selectedCityIndex inProvince:self.selectedProvinceIndex];
-            self.selectedRegionIndex = [self indexOfSelection:initArray[2] array:_regions];
+            _selectedProvinceIndex = [self indexOfSelection:initArray[0] array:_provinces];
+            [self citiesOfProvinceIndex:_selectedProvinceIndex];
+            _selectedCityIndex = [self indexOfSelection:initArray[1] array:_cities];
+            [self regionsOfCity:_selectedCityIndex inProvince:_selectedProvinceIndex];
+            _selectedRegionIndex = [self indexOfSelection:initArray[2] array:_regions];
         }
         
         
@@ -79,9 +80,9 @@
             [_pickerView selectRow:self.selectedRegionIndex inComponent:2 animated:NO];
         }
         
-        self.resultProvince = self.provinces[self.selectedProvinceIndex];
-        self.resultCity = self.cities[self.selectedCityIndex];
-        self.resultRegion = self.regions[self.selectedRegionIndex];
+        _resultProvince = _provinces[_selectedProvinceIndex];
+        _resultCity = _cities[_selectedCityIndex];
+        _resultRegion = _regions[_selectedRegionIndex];
     }
     
     

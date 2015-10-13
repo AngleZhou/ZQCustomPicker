@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZQCustomPicker: c05b046bc79639ba30bc93d1afa13e24fe1ac20e
+  ZQCustomPicker: e5205dcf90bb6adabf318a5e1b35dd3050419c6d
 
 COCOAPODS: 0.38.2

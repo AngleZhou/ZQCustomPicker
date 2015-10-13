@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7F93F68211B0D7D413CE8A32"
+               BlueprintIdentifier = "A293F8AE722CD062FA7A724D"
                BuildableName = "ZQCustomPicker.framework"
                BlueprintName = "ZQCustomPicker"
                ReferencedContainer = "container:Pods.xcodeproj">

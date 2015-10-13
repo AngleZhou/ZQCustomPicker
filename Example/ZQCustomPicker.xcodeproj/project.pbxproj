@@ -12,6 +12,7 @@
 		2B2B76E61BCCF73F00AA6137 /* ZQAddressPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2B76E51BCCF73F00AA6137 /* ZQAddressPicker.m */; settings = {ASSET_TAGS = (); }; };
 		2B2B76E91BCCF7C000AA6137 /* ZQCustomDataPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2B76E81BCCF7C000AA6137 /* ZQCustomDataPicker.m */; settings = {ASSET_TAGS = (); }; };
 		2B2B76EC1BCCF7D100AA6137 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2B76EB1BCCF7D100AA6137 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		2B2B76EE1BCD046600AA6137 /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B2B76ED1BCD046600AA6137 /* address.plist */; settings = {ASSET_TAGS = (); }; };
 		5991BBFD967419F65803ACE7 /* Pods_ZQCustomPicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921574CC795BCB0C7DB353DA /* Pods_ZQCustomPicker_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -47,6 +48,7 @@
 		2B2B76E81BCCF7C000AA6137 /* ZQCustomDataPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQCustomDataPicker.m; sourceTree = "<group>"; };
 		2B2B76EA1BCCF7D100AA6137 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2B2B76EB1BCCF7D100AA6137 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2B2B76ED1BCD046600AA6137 /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
 		4BA714ED2297E8F171F68C23 /* Pods_ZQCustomPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQCustomPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FAC05FA046FEA3718D39F3A /* Pods-ZQCustomPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZQCustomPicker_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZQCustomPicker_Example/Pods-ZQCustomPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZQCustomPicker_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZQCustomPicker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +176,7 @@
 				6003F595195388D20070C39A /* ZQCustomPicker-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
+				2B2B76ED1BCD046600AA6137 /* address.plist */,
 				6003F59B195388D20070C39A /* ZQCustomPicker-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				2B2B76EE1BCD046600AA6137 /* address.plist in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);

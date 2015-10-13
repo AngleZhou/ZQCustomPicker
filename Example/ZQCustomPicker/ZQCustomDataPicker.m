@@ -114,7 +114,7 @@ static float toolbarHeight = 40;
 - (instancetype)initNullableDatePickerWithYear:(NSInteger)year Month:(NSInteger)month Day:(NSInteger)day isDecorationView:(BOOL)isDecorationView hasToolbar:(BOOL)hasToolbar {
     self = [super init];
     if (self) {
-        self.type = ZQCustomDataPickerTypeDate;
+        self.type = ZQCustomDataPickerTypeNullable;
         _hasToolBar = hasToolbar;
         [self setMainView:isDecorationView hasToolbar:hasToolbar];
         
@@ -163,7 +163,7 @@ static float toolbarHeight = 40;
 - (instancetype)initPickerViewWithArray:(NSArray *)array andInitSelection:(NSArray *)initArray isDecorationView:(BOOL)isDecorationView hasToolbar:(BOOL)hasToolbar {
     self=[super init];
     if (self) {
-        self.type = ZQCustomDataPickerTypeDate;
+        self.type = ZQCustomDataPickerTypeNormal;
         _hasToolBar = hasToolbar;
         _dataArray = array;
         
@@ -220,7 +220,7 @@ static float toolbarHeight = 40;
 - (instancetype)initAddressPickerWithInitSelection:(NSArray *)initArray isDecorationView:(BOOL)isDecorationView hasToolbar:(BOOL)hasToolbar {
     self = [super init];
     if (self) {
-        _type = ZQCustomDataPickerTypeDate;
+        _type = ZQCustomDataPickerTypeAddress;
         _hasToolBar = hasToolbar;
         _selectionArray = initArray;
         [self setMainView:isDecorationView hasToolbar:hasToolbar];
